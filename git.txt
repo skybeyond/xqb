@@ -1,0 +1,9 @@
+git reset HEAD READM.md
+git reset HEAD .idea/   
+
+你.idea下面的文件应该是提交到了服务器了，所以必须先删除。
+git rm -r --cached .idea
+git commit -m "delete idea"
+git push
+如果只存在缓存区或者本地版本库内
+git reset Head file.name

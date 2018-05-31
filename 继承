@@ -1,0 +1,5 @@
+class A extends B{
+
+}
+spl_autoload_register(array('Loader','auto_class_load'));
+继承可以将两个类名都传入auto_class_load中
